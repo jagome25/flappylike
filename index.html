@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#09090b" />
+    <meta
+      name="description"
+      content="Flappy Art is a tiny unofficial fan-made arcade game with desktop and mobile controls."
+    />
+    <title>Flappy Art — Unofficial Fan Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="game-card" aria-labelledby="game-title">
+        <header class="game-header">
+          <div>
+            <p class="eyebrow">A tiny unofficial fan game</p>
+            <h1 id="game-title">Flappy Art</h1>
+          </div>
+          <div class="controls" aria-label="Game options">
+            <button id="sound-button" class="icon-button" type="button" aria-label="Mute sound" title="Mute sound">
+              <span aria-hidden="true">♪</span>
+            </button>
+            <button id="pause-button" class="icon-button" type="button" aria-label="Pause game" title="Pause game">
+              <span aria-hidden="true">Ⅱ</span>
+            </button>
+          </div>
+        </header>
+
+        <div class="canvas-frame">
+          <canvas
+            id="game"
+            width="420"
+            height="720"
+            tabindex="0"
+            aria-label="Flappy Art arcade game. Press Space, click, or tap to flap through the carnival."
+          ></canvas>
+          <p id="game-status" class="sr-only" aria-live="polite">Game ready. Tap, click, or press Space to flap.</p>
+        </div>
+
+        <footer class="game-footer">
+          <span><kbd>Space</kbd> / click / tap to flap</span>
+          <span>Best score saves on this device</span>
+        </footer>
+      </section>
+
+      <p class="disclaimer">
+        Unofficial, noncommercial fan project. Original code and artwork; no film assets used.
+      </p>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
